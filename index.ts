@@ -1,21 +1,9 @@
-import {
-  pattern1,
-  pattern2,
-  pattern3,
-  pattern4,
-  pattern5,
-  pattern6,
-  pattern7,
-  pattern8,
-  pattern9,
-} from "./patterns";
-import { selectionSort, bubbleSort, insertionSort } from "./sorting";
-const patterns = (pattern: any, number: number) => {
-  return pattern(number);
-};
+import { Pattern } from "./patterns";
+import { Sorting } from "./sorting";
 
-// patterns(pattern9, 5);
+// Pattern.pattern1(pattern9, 5);
 
-selectionSort(6, [12, 6, 25, 78, 100, 1]);
-bubbleSort(6, [5, 4, 3, 2, 1, 0]);
-insertionSort(6, [5, 4, 3, 2, 1, 0]);
+// Sorting.selectionSort(6, [12, 6, 25, 78, 100, 1]);
+// Sorting.bubbleSort(6, [5, 4, 3, 2, 1, 0]);
+// Sorting.insertionSort(6, [5, 4, 3, 2, 1, 0]);
+console.log(Sorting.mergeSort(0, [5, 4, 3, 2, 1, 0], 5));
